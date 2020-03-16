@@ -366,6 +366,33 @@
         }
     }
     
+    .evaluate {
+        background: #212121;
+        color: #aac078;
+        padding-top: 3.2rem;
+        padding-bottom: 0.8rem;
+        font-size: 1.2rem;
+        p {
+            line-height: 0.8;
+        }
+        span {
+            font-family: myFirstFont;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            li {
+                padding: 1.3rem;
+            }
+        }
+    }
+    
+    footer {
+        color: white;
+        background: #33362f;
+    }
+    
     @media screen and (min-width:992px) {
         .right {
             margin-left: 19rem;

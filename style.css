@@ -486,6 +486,41 @@ body {
   border-bottom: 5px solid #afc67b;
 }
 
+.evaluate {
+  background: #212121;
+  color: #aac078;
+  padding-top: 3.2rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.evaluate p {
+  line-height: 0.8;
+}
+
+.evaluate span {
+  font-family: myFirstFont;
+}
+
+.evaluate ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.evaluate ul li {
+  padding: 1.3rem;
+}
+
+footer {
+  color: white;
+  background: #33362f;
+}
+
 @media screen and (min-width: 992px) {
   .right {
     margin-left: 19rem;
