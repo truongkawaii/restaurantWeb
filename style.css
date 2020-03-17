@@ -7,25 +7,6 @@ body {
   background-color: #212121;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    min-width: 1190px !important;
-    padding: 0 !important;
-  }
-  .container-fluid {
-    padding: 0 !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 !important;
-  }
-  .container-fluid {
-    padding: 0 !important;
-  }
-}
-
 @font-face {
   font-family: myFirstFont;
   src: url(./GoodDog.woff);
@@ -517,8 +498,36 @@ body {
 }
 
 footer {
+  padding-top: 3rem;
   color: white;
   background: #33362f;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1190px !important;
+    padding: 0 !important;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 !important;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -537,6 +546,129 @@ footer {
   }
   #setleft3 p {
     margin-right: 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .ab {
+    text-align: center;
+  }
+  .top-link .contraint {
+    top: 0;
+  }
+  .top-link-menu {
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .top-link-menu .nav-menu ul {
+    width: 50%;
+    right: 0;
+    position: absolute;
+    background-color: #ffffca;
+    padding-top: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: center;
+  }
+  .top-link-menu .nav-menu ul li {
+    padding: 0.3rem;
+    font-size: 22px;
+  }
+  .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo img {
+    margin-right: 22%;
+    margin-top: 3.2rem;
+    background: #ecd9d9;
+  }
+  .logo .info-banner {
+    margin-top: 3rem;
+    margin-right: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #AAC078;
+  }
+  .logo .info-banner span {
+    font-size: 25px;
+  }
+  .logo .info-banner h3 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 0.7;
+  }
+  .logo .info-banner h2 {
+    background: #aac078;
+    background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(170, 192, 120, 0.353379)), color-stop(100%, rgba(241, 161, 161, 0.543855)), to(#00c7f0));
+    background: linear-gradient(90deg, rgba(170, 192, 120, 0.353379) 100%, rgba(241, 161, 161, 0.543855) 100%, #00c7f0 100%);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-top: 5.4rem;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo img {
+    margin-right: 22%;
+    margin-top: 3.2rem;
+    background: #ecd9d9;
+  }
+  .logo .info-banner {
+    margin-top: 1.2rem;
+    margin-right: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #AAC078;
+  }
+  .logo .info-banner span {
+    font-size: 25px;
+  }
+  .logo .info-banner h3 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 0.7;
+  }
+  .logo .info-banner h2 {
+    background: #aac078;
+    background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(170, 192, 120, 0.353379)), color-stop(100%, rgba(241, 161, 161, 0.543855)), to(#00c7f0));
+    background: linear-gradient(90deg, rgba(170, 192, 120, 0.353379) 100%, rgba(241, 161, 161, 0.543855) 100%, #00c7f0 100%);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-top: 1.6rem;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */

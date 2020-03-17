@@ -7,30 +7,12 @@
         background-color: #212121;
     }
     
-    @media screen and (min-width:1200px) {
-        .container {
-            min-width: 1190px !important;
-            padding: 0 !important;
-        }
-        .container-fluid {
-            padding: 0 !important;
-        }
-    }
-    
-    @media (max-width:1200px) {
-        .container {
-            padding: 0 !important;
-        }
-        .container-fluid {
-            padding: 0 !important;
-        }
-    }
-    
     @font-face {
         font-family: myFirstFont;
         src: url(./GoodDog.woff);
     }
     
+    // STyle Top link
     .top-link {
         .contraint {
             top: 0;
@@ -62,6 +44,7 @@
         }
     }
     
+    // Style Logo
     .logo {
         width: 100%;
         display: flex;
@@ -299,6 +282,7 @@
         }
     }
     
+    // Style Calender
     .calendar {
         padding-top: 2.5rem;
         color: white;
@@ -330,6 +314,7 @@
         }
     }
     
+    // Style DiscoverNews
     .discover-news {
         padding-bottom: 7rem;
         padding-top: 2.8rem;
@@ -366,6 +351,7 @@
         }
     }
     
+    // Style Evalute
     .evaluate {
         background: #212121;
         color: #aac078;
@@ -388,9 +374,38 @@
         }
     }
     
+    // Style Footer
     footer {
+        padding-top: 3rem;
         color: white;
         background: #33362f;
+        span {
+            font-weight: bold;
+        }
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
+    
+    @media screen and (min-width:1200px) {
+        .container {
+            min-width: 1190px !important;
+            padding: 0 !important;
+        }
+        .container-fluid {
+            padding: 0 !important;
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .container {
+            padding: 0 !important;
+        }
+        .container-fluid {
+            padding: 0 !important;
+        }
     }
     
     @media screen and (min-width:992px) {
@@ -409,5 +424,113 @@
         }
         #setleft3 p {
             margin-right: 6rem;
+        }
+    }
+    
+    @media (max-width:992px) {
+        body {
+            overflow-x: hidden;
+        }
+        .ab {
+            text-align: center;
+        }
+        // Style HOME MENU
+        // STyle Top link
+        .top-link {
+            .contraint {
+                top: 0;
+            }
+            &-menu {
+                width: 100%;
+                top: 0;
+                right: 0;
+                position: absolute;
+                .nav-menu {
+                    ul {
+                        width: 50%;
+                        right: 0;
+                        position: absolute;
+                        background-color: rgb(255, 255, 202);
+                        padding-top: 1.2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        text-align: center;
+                        li {
+                            padding: 0.3rem;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        // STyle logo
+        // Style Logo
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            img {
+                margin-right: 22%;
+                margin-top: 3.2rem;
+                background: rgb(236, 217, 217);
+            }
+            .info-banner {
+                margin-top: 3rem;
+                margin-right: 2%;
+                font-family: 'Montserrat', sans-serif;
+                color: #AAC078;
+                span {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 42px;
+                    font-weight: bold;
+                    line-height: 0.7;
+                }
+                h2 {
+                    background: rgb(170, 192, 120);
+                    background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
+                    padding: 1rem 1.5rem 1rem 1.5rem;
+                    margin-top: 5.4rem;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:768px) {
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            img {
+                margin-right: 22%;
+                margin-top: 3.2rem;
+                background: rgb(236, 217, 217);
+            }
+            .info-banner {
+                margin-top: 1.2rem;
+                margin-right: 2%;
+                font-family: 'Montserrat', sans-serif;
+                color: #AAC078;
+                span {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 26px;
+                    font-weight: bold;
+                    line-height: 0.7;
+                }
+                h2 {
+                    background: rgb(170, 192, 120);
+                    background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
+                    padding: 1rem 1.5rem 1rem 1.5rem;
+                    margin-top: 1.6rem;
+                    font-size: 24px;
+                }
+            }
         }
     }
