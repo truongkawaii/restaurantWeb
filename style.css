@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+#three-line {
+  opacity: 0;
+  padding: 0.3rem;
+  border: 3px solid black;
+  top: 1rem;
+  width: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  z-index: 5;
+  cursor: pointer;
+}
+
 body {
   background-color: #212121;
 }
@@ -648,18 +660,7 @@ footer ul li {
     width: 50%;
     right: 0;
     position: absolute;
-    background-color: #ffffca;
     padding-top: 1.2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     text-align: center;
   }
   .top-link-menu .nav-menu ul li {
@@ -1028,6 +1029,41 @@ footer ul li {
 }
 
 @media (max-width: 768px) {
+  #three-line {
+    opacity: 1;
+  }
+  .top-link .contraint {
+    top: 0;
+  }
+  .top-link-menu {
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .top-link-menu .nav-menu ul {
+    -webkit-transition: all ease-in 500ms;
+    transition: all ease-in 500ms;
+    background-color: #34623F;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    width: 50%;
+    right: 0;
+    position: absolute;
+  }
+  .top-link-menu .nav-menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #182e1d;
+    padding: 0.3rem;
+    font-size: 22px;
+  }
+  .top-link-menu .nav-menu ul li a {
+    float: left;
+  }
   .logo {
     width: 100%;
     display: -webkit-box;
@@ -1193,5 +1229,10 @@ footer ul li {
   .menu-food .all-menu-food .component-text h6 {
     font-size: 1rem;
   }
+}
+
+.show {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
 }
 /*# sourceMappingURL=style.css.map */

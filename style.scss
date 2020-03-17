@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+#three-line {
+    opacity: 0;
+    padding: 0.3rem;
+    border: 3px solid black;
+    top: 1rem;
+    width: 2rem;
+    position: absolute;
+    right: 1.5rem;
+    z-index: 5;
+    cursor: pointer;
+}
+
 body {
     background-color: #212121;
 }
@@ -525,11 +537,7 @@ footer {
                     width: 50%;
                     right: 0;
                     position: absolute;
-                    background-color: rgb(255, 255, 202);
                     padding-top: 1.2rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
                     text-align: center;
                     li {
                         padding: 0.3rem;
@@ -841,6 +849,41 @@ footer {
 }
 
 @media (max-width:768px) {
+    #three-line {
+        opacity: 1;
+    }
+    // STyle Top link
+    .top-link {
+        .contraint {
+            top: 0;
+        }
+        &-menu {
+            width: 100%;
+            top: 0;
+            right: 0;
+            position: absolute;
+            .nav-menu {
+                ul {
+                    transition: all ease-in 500ms;
+                    background-color: #34623F;
+                    flex-direction: column;
+                    transform: translateX(100%);
+                    width: 50%;
+                    right: 0;
+                    position: absolute;
+                    li {
+                        width: 100%;
+                        border-bottom: 1px solid rgb(24, 46, 29);
+                        padding: 0.3rem;
+                        font-size: 22px;
+                        a {
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .logo {
         width: 100%;
         display: flex;
@@ -992,4 +1035,8 @@ footer {
             }
         }
     }
+}
+
+.show {
+    transform: translateX(0%) !important;
 }

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <img id="three-line" src="./img/menu.svg" alt="">
     <div class="top-link">
         <div class="container-fluid">
 
@@ -20,7 +21,7 @@
                 <div class="contraint">
                     <div class="top-link-menu">
                         <div class="nav-menu">
-                            <ul>
+                            <ul id="click">
                                 <li>
                                     <a href="">Welcome</a></li>
                                 <li>
@@ -472,7 +473,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        var threeClick = document.getElementById('three-line');
+        const navLinks = document.querySelectorAll('#click li');
+        threeClick.addEventListener('click', () => {
+            let ul = document.getElementById('click');
+            ul.classList.toggle('show');
+            // event click to show menu
 
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index/7+0.5}s`
+                }
+
+            });
+
+
+
+        });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
