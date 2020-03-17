@@ -1051,6 +1051,8 @@ footer ul li {
             flex-direction: column;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
     width: 50%;
     right: 0;
     position: absolute;
@@ -1110,7 +1112,7 @@ footer ul li {
     width: 70px;
   }
   .logo .info-banner {
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
     margin-right: 2%;
     font-family: 'Montserrat', sans-serif;
     color: #AAC078;
@@ -1122,8 +1124,11 @@ footer ul li {
     font-size: 18px;
   }
   .logo .info-banner h2 {
-    margin-top: 1.6rem;
-    font-size: 16px;
+    margin-top: 1.2rem;
+    font-size: 12px;
+  }
+  .content {
+    padding-top: 2rem;
   }
   .evaluate {
     padding-top: 2.5rem;

@@ -868,6 +868,7 @@ footer {
                     background-color: #34623F;
                     flex-direction: column;
                     transform: translateX(100%);
+                    transition: all ease-in 0.5s;
                     width: 50%;
                     right: 0;
                     position: absolute;
@@ -923,7 +924,7 @@ footer {
             width: 70px;
         }
         .info-banner {
-            margin-top: 1.2rem;
+            margin-top: 0.8rem;
             margin-right: 2%;
             font-family: 'Montserrat', sans-serif;
             color: #AAC078;
@@ -934,10 +935,14 @@ footer {
                 font-size: 18px;
             }
             h2 {
-                margin-top: 1.6rem;
-                font-size: 16px;
+                margin-top: 1.2rem;
+                font-size: 12px;
             }
         }
+    }
+    // style service
+    .content {
+        padding-top: 2rem;
     }
     // Style Evalute
     .evaluate {
