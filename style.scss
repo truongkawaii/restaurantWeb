@@ -724,8 +724,9 @@ footer {
             }
             &-foods {
                 display: flex;
+                flex-direction: column;
                 &-component {
-                    width: 50%;
+                    width: 100%;
                     align-items: center;
                     display: flex;
                     ul {
