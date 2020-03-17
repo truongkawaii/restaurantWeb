@@ -875,70 +875,122 @@ footer {
 }
 
 @media (max-width:570px) {
-    // Style Evalute
-    .evaluate {
-        padding-top: 2.5rem;
-        padding-bottom: 0.8rem;
-        font-size: 14px;
+    .logo {
         img {
-            width: 30px;
+            width: 70px;
         }
-        p {
-            line-height: 0.8;
-        }
-        span {
-            font-family: myFirstFont;
-        }
-        ul {
-            justify-content: space-around;
-            li {
-                padding: 0.9rem;
+        .info-banner {
+            margin-top: 1.2rem;
+            margin-right: 2%;
+            font-family: 'Montserrat', sans-serif;
+            color: #AAC078;
+            span {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            h2 {
+                margin-top: 1.6rem;
+                font-size: 16px;
             }
         }
     }
-    // style menu-food
-    .menu-food {
-        .all-menu {
-            background: #45493b;
-            margin: 0 auto;
-            width: 90.6%;
-            &-info {
-                padding-top: 3rem;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: honeydew;
-                span {
-                    font-family: myFirstFont;
-                    color: #AAC078;
-                    font-size: 2.8rem;
-                }
-                p {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 32px;
-                    line-height: 1.3;
+}
+
+// Style Evalute
+.evaluate {
+    padding-top: 2.5rem;
+    padding-bottom: 0.8rem;
+    font-size: 14px;
+    img {
+        width: 30px;
+    }
+    p {
+        line-height: 0.8;
+    }
+    span {
+        font-family: myFirstFont;
+    }
+    ul {
+        justify-content: space-around;
+        li {
+            padding: 0.9rem;
+        }
+    }
+}
+
+// style service
+.content {
+    width: 100%;
+    display: flex;
+    background-color: #212121;
+    flex-direction: column;
+    &-info {
+        order: 2;
+        margin-top: 4.5rem;
+        min-width: 100%;
+        flex-basis: 100%;
+        span {
+            margin-left: 1.2rem;
+            font-size: 2rem;
+            color: #AAC078;
+        }
+        p {
+            margin-top: 2rem;
+            margin-left: 1.2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+    &-img {
+        min-width: 51%;
+        flex-basis: 51%;
+    }
+}
+
+// style menu-food
+.menu-food {
+    .all-menu {
+        background: #45493b;
+        margin: 0 auto;
+        width: 90.6%;
+        &-info {
+            padding-top: 3rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: honeydew;
+            span {
+                font-family: myFirstFont;
+                color: #AAC078;
+                font-size: 2.8rem;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 32px;
+                line-height: 1.3;
+            }
+        }
+        &-food {
+            &-component {
+                img {
+                    max-width: 50%;
                 }
             }
-            &-food {
-                &-component {
-                    img {
-                        max-width: 50%;
-                    }
+            .component-text {
+                span {
+                    font-size: 16px;
                 }
-                .component-text {
-                    span {
-                        font-size: 16px;
-                    }
-                    p {
-                        margin-right: 15px;
-                        font-size: 1rem;
-                        color: rgb(255, 255, 255);
-                    }
-                    h6 {
-                        font-size: 1rem;
-                    }
+                p {
+                    margin-right: 15px;
+                    font-size: 1rem;
+                    color: rgb(255, 255, 255);
+                }
+                h6 {
+                    font-size: 1rem;
                 }
             }
         }

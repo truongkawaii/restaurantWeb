@@ -1069,73 +1069,147 @@ footer ul li {
 }
 
 @media (max-width: 570px) {
-  .evaluate {
-    padding-top: 2.5rem;
-    padding-bottom: 0.8rem;
-    font-size: 14px;
+  .logo img {
+    width: 70px;
   }
-  .evaluate img {
-    width: 30px;
-  }
-  .evaluate p {
-    line-height: 0.8;
-  }
-  .evaluate span {
-    font-family: myFirstFont;
-  }
-  .evaluate ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .evaluate ul li {
-    padding: 0.9rem;
-  }
-  .menu-food .all-menu {
-    background: #45493b;
-    margin: 0 auto;
-    width: 90.6%;
-  }
-  .menu-food .all-menu-info {
-    padding-top: 3rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: honeydew;
-  }
-  .menu-food .all-menu-info span {
-    font-family: myFirstFont;
-    color: #AAC078;
-    font-size: 2.8rem;
-  }
-  .menu-food .all-menu-info p {
+  .logo .info-banner {
+    margin-top: 1.2rem;
+    margin-right: 2%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    line-height: 1.3;
+    color: #AAC078;
   }
-  .menu-food .all-menu-food-component img {
-    max-width: 50%;
+  .logo .info-banner span {
+    font-size: 18px;
   }
-  .menu-food .all-menu-food .component-text span {
+  .logo .info-banner h3 {
+    font-size: 18px;
+  }
+  .logo .info-banner h2 {
+    margin-top: 1.6rem;
     font-size: 16px;
   }
-  .menu-food .all-menu-food .component-text p {
-    margin-right: 15px;
-    font-size: 1rem;
-    color: white;
-  }
-  .menu-food .all-menu-food .component-text h6 {
-    font-size: 1rem;
-  }
+}
+
+.evaluate {
+  padding-top: 2.5rem;
+  padding-bottom: 0.8rem;
+  font-size: 14px;
+}
+
+.evaluate img {
+  width: 30px;
+}
+
+.evaluate p {
+  line-height: 0.8;
+}
+
+.evaluate span {
+  font-family: myFirstFont;
+}
+
+.evaluate ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.evaluate ul li {
+  padding: 0.9rem;
+}
+
+.content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #212121;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-info {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 4.5rem;
+  min-width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.content-info span {
+  margin-left: 1.2rem;
+  font-size: 2rem;
+  color: #AAC078;
+}
+
+.content-info p {
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.content-img {
+  min-width: 51%;
+  -ms-flex-preferred-size: 51%;
+      flex-basis: 51%;
+}
+
+.menu-food .all-menu {
+  background: #45493b;
+  margin: 0 auto;
+  width: 90.6%;
+}
+
+.menu-food .all-menu-info {
+  padding-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: honeydew;
+}
+
+.menu-food .all-menu-info span {
+  font-family: myFirstFont;
+  color: #AAC078;
+  font-size: 2.8rem;
+}
+
+.menu-food .all-menu-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.menu-food .all-menu-food-component img {
+  max-width: 50%;
+}
+
+.menu-food .all-menu-food .component-text span {
+  font-size: 16px;
+}
+
+.menu-food .all-menu-food .component-text p {
+  margin-right: 15px;
+  font-size: 1rem;
+  color: white;
+}
+
+.menu-food .all-menu-food .component-text h6 {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
