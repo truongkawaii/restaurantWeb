@@ -1,139 +1,424 @@
-    * {
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./GoodDog.woff);
+}
+
+// STyle Top link
+.top-link {
+    .contraint {
+        top: 0;
+        position: relative;
     }
-    
-    body {
-        background-color: #212121;
-    }
-    
-    @font-face {
-        font-family: myFirstFont;
-        src: url(./GoodDog.woff);
-    }
-    
-    // STyle Top link
-    .top-link {
-        .contraint {
-            top: 0;
-            position: relative;
-        }
-        &-menu {
-            top: 0;
-            right: 0;
-            position: absolute;
-            .nav-menu {
-                width: 100%;
-                ul {
-                    font-family: 'Montserrat', sans-serif;
-                    padding-top: 3rem;
-                    justify-content: flex-end;
-                    align-items: center;
-                    display: flex;
-                    li {
-                        margin-left: 1.2rem;
-                        font-size: 2.2rem;
-                        list-style: none;
-                        a {
-                            text-decoration: none;
-                            color: #aac078;
-                        }
+    &-menu {
+        top: 0;
+        right: 0;
+        position: absolute;
+        .nav-menu {
+            width: 100%;
+            ul {
+                font-family: 'Montserrat', sans-serif;
+                padding-top: 3rem;
+                justify-content: flex-end;
+                align-items: center;
+                display: flex;
+                li {
+                    margin-left: 1.2rem;
+                    font-size: 2.2rem;
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: #aac078;
                     }
                 }
             }
         }
     }
-    
-    // Style Logo
-    .logo {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        img {
-            margin-right: 22%;
-            margin-top: 3.2rem;
+}
+
+// Style Logo
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    img {
+        margin-right: 22%;
+        margin-top: 3.2rem;
+    }
+    .info-banner {
+        margin-top: 5.6rem;
+        margin-right: 2%;
+        font-family: 'Montserrat', sans-serif;
+        color: #AAC078;
+        span {
+            font-size: 3.5rem;
         }
-        .info-banner {
-            margin-top: 5.6rem;
-            margin-right: 2%;
-            font-family: 'Montserrat', sans-serif;
-            color: #AAC078;
-            span {
-                font-size: 3.5rem;
-            }
-            h3 {
-                font-size: 4.9rem;
-                font-weight: bold;
-                line-height: 0.7;
-            }
-            h2 {
-                background: rgb(170, 192, 120);
-                background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
-                padding: 1rem 1.5rem 1rem 1.5rem;
-                margin-top: 9.4rem;
-                font-size: 3.1rem;
-            }
+        h3 {
+            font-size: 4.9rem;
+            font-weight: bold;
+            line-height: 0.7;
+        }
+        h2 {
+            background: rgb(170, 192, 120);
+            background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            margin-top: 9.4rem;
+            font-size: 3.1rem;
         }
     }
-    
-    .content {
-        width: 100%;
-        display: flex;
-        background-color: #212121;
+}
+
+// Style Menu food
+.menu-food {
+    background-color: #212121;
+    .all-menu {
+        background: #45493b;
+        margin: 0 auto;
+        width: 90.6%;
         &-info {
-            margin-top: 9.5rem;
-            min-width: 49%;
-            flex-basis: 49%;
-            span {
-                margin-left: 6.2rem;
-                font-family: myFirstFont;
-                font-size: 1.8rem;
-                color: #AAC078;
-            }
-            p {
-                margin-top: 2rem;
-                margin-left: 6.2rem;
-                color: white;
-                font-size: 1.2rem;
-            }
-        }
-        &-img {
-            min-width: 51%;
-            flex-basis: 51%;
-        }
-    }
-    
-    .benefit {
-        background-color: #45493b;
-        padding-bottom: 5rem;
-        .component {
-            margin-top: 6rem;
-            color: white;
-            align-items: flex-start;
+            padding-top: 3rem;
+            width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            color: honeydew;
+            padding-bottom: 3.5rem;
             span {
                 font-family: myFirstFont;
-                padding-bottom: 1.5rem;
-                font-size: 1.55rem;
+                color: #AAC078;
+                font-size: 2.8rem;
             }
             p {
-                font-size: 1.03rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 3.5rem;
+                line-height: 0.5;
             }
-            ul {
-                list-style: none;
+        }
+        &-food {
+            width: 100%;
+            display: flex;
+            &-component {
+                color: rgb(255, 255, 255);
+            }
+            .component-text {
                 display: flex;
+                span {
+                    margin-top: 1.3rem;
+                    font-family: myFirstFont;
+                    color: #AAC078;
+                    font-size: 16px;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                }
+                h6 {
+                    font-size: 1rem;
+                }
             }
         }
     }
-    
+}
+
+// style service
+.content {
+    width: 100%;
+    display: flex;
+    background-color: #212121;
+    &-info {
+        margin-top: 9.5rem;
+        min-width: 49%;
+        flex-basis: 49%;
+        span {
+            margin-left: 6.2rem;
+            font-family: myFirstFont;
+            font-size: 1.8rem;
+            color: #AAC078;
+        }
+        p {
+            margin-top: 2rem;
+            margin-left: 6.2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+    &-img {
+        min-width: 51%;
+        flex-basis: 51%;
+    }
+}
+
+.benefit {
+    background-color: #45493b;
+    padding-bottom: 5rem;
+    .component {
+        margin-top: 6rem;
+        color: white;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        span {
+            font-family: myFirstFont;
+            padding-bottom: 1.5rem;
+            font-size: 1.55rem;
+        }
+        p {
+            font-size: 1.03rem;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+}
+
+.purpose {
+    color: lavenderblush;
+    background-color: #3e4136;
+    &-content {
+        padding-top: 6.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+        span {
+            font-family: myFirstFont;
+            color: #AAC078;
+            font-size: 2.6em;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.3rem;
+            line-height: 0.8;
+        }
+        ul {
+            margin-top: 2.7rem;
+            list-style: none;
+            display: flex;
+            li {
+                padding: 1.5px;
+            }
+        }
+    }
+}
+
+// Style discover menu
+.discover-menu {
+    background: #212121;
+    // width: 100%;
+    min-height: 100vh;
+    // background-image: url(/img/menu.png);
+    .cover {
+        position: relative;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        background-color: #3e4136;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 14.6rem;
+        display: flex;
+        justify-content: center;
+        color: lavenderblush;
+        position: absolute;
+        &-title {
+            margin-top: 2.6rem;
+            margin-bottom: 2.2rem;
+            h2 {
+                font-family: myFirstFont;
+                font-size: 4.5rem;
+                line-height: 0.5;
+            }
+            span {
+                font-size: 2.8rem;
+                line-height: 1.1;
+            }
+        }
+        &-foods {
+            display: flex;
+            margin: 0 auto;
+            width: 88.25%;
+            &-component {
+                width: 50%;
+                align-items: center;
+                display: flex;
+                ul {
+                    margin-left: 0.5rem;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        span {
+                            font-family: myFirstFont;
+                            font-size: 1.56rem;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 1.2rem;
+                        }
+                        list-style: none;
+                    }
+                }
+                margin-bottom: 2.3rem;
+            }
+        }
+    }
+}
+
+// Style Calender
+.calendar {
+    padding-top: 2.5rem;
+    color: white;
+    background: #212121;
+    padding-bottom: 5rem;
+    h2 {
+        font-family: myFirstFont;
+    }
+    a {
+        margin: 0 auto;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 2px 5rem 2px 5rem;
+        border: 1px solid white;
+    }
+    &-booking {
+        select {
+            width: 60%;
+            color: white;
+            background: none;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+// Style DiscoverNews
+.discover-news {
+    padding-bottom: 7rem;
+    padding-top: 2.8rem;
+    background-color: #383b32;
+    h2 {
+        line-height: 0.6;
+        font-family: myFirstFont;
+        font-size: 4.8rem;
+        color: #afc67b;
+    }
+    h3 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 3.2rem;
+    }
+    .card-news {
+        display: flex;
+        justify-content: space-evenly;
+        .card {
+            border: none;
+        }
+        span {
+            font-size: 0.9rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        a {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: black;
+            padding: 3px;
+            border-bottom: 5px solid #afc67b;
+        }
+    }
+}
+
+// Style Evalute
+.evaluate {
+    background: #212121;
+    color: #aac078;
+    padding-top: 3.2rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.2rem;
+    p {
+        line-height: 0.8;
+    }
+    span {
+        font-family: myFirstFont;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        li {
+            padding: 1.3rem;
+        }
+    }
+}
+
+// Style Footer
+footer {
+    padding-top: 3rem;
+    color: white;
+    background: #33362f;
+    span {
+        font-weight: bold;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        min-width: 1190px !important;
+        padding: 0 !important;
+    }
+    .container-fluid {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .container {
+        padding: 0 !important;
+    }
+    .container-fluid {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .right {
+        margin-left: 19rem;
+    }
+    #setleft {
+        margin-left: 6.4rem;
+    }
+    #setleft2 {
+        margin-left: 2.2rem;
+        margin-right: 3rem;
+    }
+    #setleft3 {
+        padding: 0;
+    }
+    #setleft3 p {
+        margin-right: 6rem;
+    }
+    // style menufood
     .menu-food {
-        background-color: #212121;
         padding-top: 5.5rem;
         padding-bottom: 5.7rem;
         .all-menu {
-            background: #45493b;
             margin: 0 auto;
             width: 90.6%;
             &-info {
@@ -146,7 +431,6 @@
                 padding-bottom: 3.5rem;
                 span {
                     font-family: myFirstFont;
-                    color: #AAC078;
                     font-size: 2.8rem;
                 }
                 p {
@@ -157,20 +441,16 @@
             }
             &-food {
                 width: 100%;
-                display: flex;
                 &-component {
                     min-width: 25%;
                     flex-basis: 25%;
-                    color: rgb(255, 255, 255);
                 }
                 .component-text {
-                    display: flex;
                     flex-direction: column;
                     align-items: center;
                     span {
                         margin-top: 3.3rem;
                         font-family: myFirstFont;
-                        color: #AAC078;
                         font-size: 1.8rem;
                     }
                     p {
@@ -178,7 +458,6 @@
                         margin-left: 4rem;
                         margin-right: 3.2rem;
                         font-size: 1rem;
-                        color: rgb(255, 255, 255);
                     }
                     h6 {
                         font-size: 1rem;
@@ -187,101 +466,6 @@
             }
         }
     }
-    
-    .purpose {
-        color: lavenderblush;
-        background-color: #3e4136;
-        &-content {
-            padding-top: 6.1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 5rem;
-            span {
-                font-family: myFirstFont;
-                color: #AAC078;
-                font-size: 2.6em;
-                margin-bottom: 1rem;
-            }
-            p {
-                font-size: 1.3rem;
-                line-height: 0.8;
-            }
-            ul {
-                margin-top: 2.7rem;
-                list-style: none;
-                display: flex;
-                li {
-                    padding: 1.5px;
-                }
-            }
-        }
-    }
-    
-    // Style discover menu
-    .discover-menu {
-        // width: 100%;
-        // height: 100vh;
-        // background-image: url(/img/menu.png);
-        .cover {
-            position: relative;
-        }
-        &-list {
-            display: flex;
-            flex-direction: column;
-            background-color: #3e4136;
-            width: 100%;
-            left: 0;
-            right: 0;
-            top: 14.6rem;
-            display: flex;
-            justify-content: center;
-            color: lavenderblush;
-            position: absolute;
-            &-title {
-                margin-top: 2.6rem;
-                margin-bottom: 2.2rem;
-                h2 {
-                    font-family: myFirstFont;
-                    font-size: 4.5rem;
-                    line-height: 0.5;
-                }
-                span {
-                    font-size: 2.8rem;
-                    line-height: 1.1;
-                }
-            }
-            &-foods {
-                display: flex;
-                margin: 0 auto;
-                width: 88.25%;
-                &-component {
-                    width: 50%;
-                    align-items: center;
-                    display: flex;
-                    ul {
-                        margin-left: 0.5rem;
-                        justify-content: center;
-                        display: flex;
-                        flex-direction: column;
-                        li {
-                            span {
-                                font-family: myFirstFont;
-                                font-size: 1.56rem;
-                            }
-                            p {
-                                margin: 0;
-                                font-size: 1.2rem;
-                            }
-                            list-style: none;
-                        }
-                    }
-                    margin-bottom: 2.3rem;
-                }
-            }
-        }
-    }
-    
     // Style Calender
     .calendar {
         padding-top: 2.5rem;
@@ -313,51 +497,331 @@
             margin-left: 4.8rem;
         }
     }
-    
-    // Style DiscoverNews
-    .discover-news {
-        padding-bottom: 7rem;
-        padding-top: 2.8rem;
-        background-color: #383b32;
-        h2 {
-            line-height: 0.6;
-            font-family: myFirstFont;
-            font-size: 4.8rem;
-            color: #afc67b;
+}
+
+@media (max-width:992px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container-fluid {
+        overflow: hidden;
+    }
+    .ab {
+        text-align: center;
+    }
+    // Style HOME MENU
+    // STyle Top link
+    .top-link {
+        .contraint {
+            top: 0;
         }
-        h3 {
-            font-size: 3rem;
-            color: white;
-            margin-bottom: 3.2rem;
+        &-menu {
+            width: 100%;
+            top: 0;
+            right: 0;
+            position: absolute;
+            .nav-menu {
+                ul {
+                    width: 50%;
+                    right: 0;
+                    position: absolute;
+                    background-color: rgb(255, 255, 202);
+                    padding-top: 1.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: center;
+                    li {
+                        padding: 0.3rem;
+                        font-size: 22px;
+                    }
+                }
+            }
         }
-        .card-news {
+    }
+    // STyle logo
+    // Style Logo
+    .logo {
+        img {
+            margin-right: 22%;
+            margin-top: 3.2rem;
+            background: rgb(236, 217, 217);
+        }
+        .info-banner {
+            margin-top: 3rem;
+            margin-right: 2%;
+            span {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 42px;
+                font-weight: bold;
+                line-height: 0.7;
+            }
+            h2 {
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                margin-top: 3.4rem;
+                font-size: 24px;
+            }
+        }
+    }
+    // style menu-food
+    .menu-food {
+        background-color: #212121;
+        padding-top: 3.5rem;
+        padding-bottom: 5rem;
+        .all-menu {
+            background: #45493b;
+            margin: 0 auto;
+            width: 90.6%;
+            &-info {
+                padding-top: 3rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: honeydew;
+                padding-bottom: 3.5rem;
+                span {
+                    font-family: myFirstFont;
+                    color: #AAC078;
+                    font-size: 2.8rem;
+                }
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 3.5rem;
+                    line-height: 0.5;
+                }
+            }
+            &-food {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &-component {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    min-width: 40%;
+                    flex-basis: 40%;
+                    color: rgb(255, 255, 255);
+                    img {
+                        max-width: 50%;
+                    }
+                }
+                .component-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        margin-top: 1.3rem;
+                        font-family: myFirstFont;
+                        color: #AAC078;
+                        font-size: 16px;
+                    }
+                    p {
+                        margin-top: 0.5rem;
+                        margin-left: 20px;
+                        margin-right: 15px;
+                        font-size: 1rem;
+                        color: rgb(255, 255, 255);
+                    }
+                    h6 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .purpose {
+        color: lavenderblush;
+        background-color: #3e4136;
+        &-content {
+            padding-top: 6.1rem;
             display: flex;
-            justify-content: space-evenly;
-            .card {
-                border: none;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 5rem;
+            img {
+                width: 1.5rem;
             }
             span {
-                font-size: 0.9rem;
+                font-size: 25px;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 16px;
+                line-height: 0.8;
+            }
+            ul {
+                margin-top: 2.7rem;
+                list-style: none;
+                justify-content: center;
+                display: flex;
+                li {
+                    padding: 1.5px;
+                }
+            }
+        }
+    }
+    // style benefit
+    .benefit {
+        background-color: #45493b;
+        padding-bottom: 3.2rem;
+        .component {
+            margin-top: 4rem;
+            align-items: center;
+            flex-direction: column;
+            span {
+                font-family: myFirstFont;
+                padding-bottom: 1.5rem;
+                font-size: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    // style service
+    .content {
+        &-info {
+            margin-top: 2.5rem;
+            span {
+                margin-left: 3.2rem;
+                font-size: 22px;
+            }
+            p {
+                margin-top: 2rem;
+                margin-left: 3.2rem;
+                font-size: 18px;
+            }
+        }
+    }
+    // style .discover-menu
+    .discover-menu {
+        // width: 100%;
+        // background-image: url(/img/menu.png);
+        background-color: #3e4136;
+        .cover {
+            position: relative;
+        }
+        &-list {
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            &-title {
+                margin-top: 2.6rem;
+                margin-bottom: 2.2rem;
+                h2 {
+                    font-size: 40px;
+                    line-height: 0.5;
+                }
+                span {
+                    font-size: 22px;
+                    line-height: 1.1;
+                }
+            }
+            &-foods {
+                display: flex;
+                &-component {
+                    width: 50%;
+                    align-items: center;
+                    display: flex;
+                    ul {
+                        margin-left: 0.5rem;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            span {
+                                font-family: myFirstFont;
+                                font-size: 18px;
+                            }
+                            p {
+                                margin: 0;
+                                font-size: 1.2rem;
+                            }
+                            list-style: none;
+                        }
+                    }
+                    margin-bottom: 2.3rem;
+                }
+            }
+        }
+    }
+    // Style Calender
+    .calendar {
+        padding-top: 2.5rem;
+        color: white;
+        background: #212121;
+        padding-bottom: 5rem;
+        text-align: center;
+        h2 {
+            font-family: myFirstFont;
+            font-size: 3.2rem;
+        }
+        a {
+            color: white;
+            border-radius: 0.5rem;
+            padding: 2px 5rem 2px 5rem;
+            border: 1px solid white;
+        }
+        &-booking {
+            text-align: center;
+            select {
+                width: 60%;
+                color: white;
+                background: none;
+                border-radius: 5px;
+                outline: none;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+    // Style DiscoverNews
+    .discover-news {
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+        h2 {
+            line-height: 0.6;
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 2.2rem;
+        }
+        .card-news {
+            flex-direction: column;
+            align-items: center;
+            .card {
+                margin-bottom: 1.5rem;
+            }
+            span {
+                font-size: 12px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: bold;
             }
+            p {
+                font-size: 11px;
+            }
             a {
                 font-weight: bold;
-                font-size: 0.9rem;
+                font-size: 11px;
                 color: black;
                 padding: 3px;
                 border-bottom: 5px solid #afc67b;
             }
         }
     }
-    
     // Style Evalute
     .evaluate {
-        background: #212121;
-        color: #aac078;
         padding-top: 3.2rem;
         padding-bottom: 0.8rem;
-        font-size: 1.2rem;
+        font-size: 16px;
+        img {
+            width: 50px;
+        }
         p {
             line-height: 0.8;
         }
@@ -365,172 +829,45 @@
             font-family: myFirstFont;
         }
         ul {
-            display: flex;
-            list-style: none;
-            justify-content: center;
+            justify-content: space-around;
             li {
-                padding: 1.3rem;
+                padding: 1.1rem;
             }
         }
     }
-    
-    // Style Footer
-    footer {
-        padding-top: 3rem;
-        color: white;
-        background: #33362f;
-        span {
-            font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        img {
+            margin-right: 22%;
+            margin-top: 3.2rem;
+            background: rgb(236, 217, 217);
         }
-        ul {
-            li {
-                list-style: none;
+        .info-banner {
+            margin-top: 1.2rem;
+            margin-right: 2%;
+            font-family: 'Montserrat', sans-serif;
+            color: #AAC078;
+            span {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 0.7;
+            }
+            h2 {
+                background: rgb(170, 192, 120);
+                background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
+                padding: 1rem 1.5rem 1rem 1.5rem;
+                margin-top: 1.6rem;
+                font-size: 24px;
             }
         }
     }
-    
-    @media screen and (min-width:1200px) {
-        .container {
-            min-width: 1190px !important;
-            padding: 0 !important;
-        }
-        .container-fluid {
-            padding: 0 !important;
-        }
-    }
-    
-    @media (max-width:1200px) {
-        .container {
-            padding: 0 !important;
-        }
-        .container-fluid {
-            padding: 0 !important;
-        }
-    }
-    
-    @media screen and (min-width:992px) {
-        .right {
-            margin-left: 19rem;
-        }
-        #setleft {
-            margin-left: 6.4rem;
-        }
-        #setleft2 {
-            margin-left: 2.2rem;
-            margin-right: 3rem;
-        }
-        #setleft3 {
-            padding: 0;
-        }
-        #setleft3 p {
-            margin-right: 6rem;
-        }
-    }
-    
-    @media (max-width:992px) {
-        body {
-            overflow-x: hidden;
-        }
-        .ab {
-            text-align: center;
-        }
-        // Style HOME MENU
-        // STyle Top link
-        .top-link {
-            .contraint {
-                top: 0;
-            }
-            &-menu {
-                width: 100%;
-                top: 0;
-                right: 0;
-                position: absolute;
-                .nav-menu {
-                    ul {
-                        width: 50%;
-                        right: 0;
-                        position: absolute;
-                        background-color: rgb(255, 255, 202);
-                        padding-top: 1.2rem;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        text-align: center;
-                        li {
-                            padding: 0.3rem;
-                            font-size: 22px;
-                        }
-                    }
-                }
-            }
-        }
-        // STyle logo
-        // Style Logo
-        .logo {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            img {
-                margin-right: 22%;
-                margin-top: 3.2rem;
-                background: rgb(236, 217, 217);
-            }
-            .info-banner {
-                margin-top: 3rem;
-                margin-right: 2%;
-                font-family: 'Montserrat', sans-serif;
-                color: #AAC078;
-                span {
-                    font-size: 25px;
-                }
-                h3 {
-                    font-size: 42px;
-                    font-weight: bold;
-                    line-height: 0.7;
-                }
-                h2 {
-                    background: rgb(170, 192, 120);
-                    background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
-                    padding: 1rem 1.5rem 1rem 1.5rem;
-                    margin-top: 5.4rem;
-                    font-size: 24px;
-                }
-            }
-        }
-    }
-    
-    @media (max-width:768px) {
-        .logo {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            img {
-                margin-right: 22%;
-                margin-top: 3.2rem;
-                background: rgb(236, 217, 217);
-            }
-            .info-banner {
-                margin-top: 1.2rem;
-                margin-right: 2%;
-                font-family: 'Montserrat', sans-serif;
-                color: #AAC078;
-                span {
-                    font-size: 25px;
-                }
-                h3 {
-                    font-size: 26px;
-                    font-weight: bold;
-                    line-height: 0.7;
-                }
-                h2 {
-                    background: rgb(170, 192, 120);
-                    background: linear-gradient(90deg, rgba(170, 192, 120, 0.3533788515406162) 100%, rgba(241, 161, 161, 0.5438550420168067) 100%, rgba(0, 199, 240, 1) 100%);
-                    padding: 1rem 1.5rem 1rem 1.5rem;
-                    margin-top: 1.6rem;
-                    font-size: 24px;
-                }
-            }
-        }
-    }
+}

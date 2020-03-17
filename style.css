@@ -97,6 +97,77 @@ body {
   font-size: 3.1rem;
 }
 
+.menu-food {
+  background-color: #212121;
+}
+
+.menu-food .all-menu {
+  background: #45493b;
+  margin: 0 auto;
+  width: 90.6%;
+}
+
+.menu-food .all-menu-info {
+  padding-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: honeydew;
+  padding-bottom: 3.5rem;
+}
+
+.menu-food .all-menu-info span {
+  font-family: myFirstFont;
+  color: #AAC078;
+  font-size: 2.8rem;
+}
+
+.menu-food .all-menu-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 0.5;
+}
+
+.menu-food .all-menu-food {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-food .all-menu-food-component {
+  color: white;
+}
+
+.menu-food .all-menu-food .component-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-food .all-menu-food .component-text span {
+  margin-top: 1.3rem;
+  font-family: myFirstFont;
+  color: #AAC078;
+  font-size: 16px;
+}
+
+.menu-food .all-menu-food .component-text p {
+  color: white;
+}
+
+.menu-food .all-menu-food .component-text h6 {
+  font-size: 1rem;
+}
+
 .content {
   width: 100%;
   display: -webkit-box;
@@ -169,93 +240,6 @@ body {
   display: flex;
 }
 
-.menu-food {
-  background-color: #212121;
-  padding-top: 5.5rem;
-  padding-bottom: 5.7rem;
-}
-
-.menu-food .all-menu {
-  background: #45493b;
-  margin: 0 auto;
-  width: 90.6%;
-}
-
-.menu-food .all-menu-info {
-  padding-top: 3rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: honeydew;
-  padding-bottom: 3.5rem;
-}
-
-.menu-food .all-menu-info span {
-  font-family: myFirstFont;
-  color: #AAC078;
-  font-size: 2.8rem;
-}
-
-.menu-food .all-menu-info p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  line-height: 0.5;
-}
-
-.menu-food .all-menu-food {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-food .all-menu-food-component {
-  min-width: 25%;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  color: white;
-}
-
-.menu-food .all-menu-food .component-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu-food .all-menu-food .component-text span {
-  margin-top: 3.3rem;
-  font-family: myFirstFont;
-  color: #AAC078;
-  font-size: 1.8rem;
-}
-
-.menu-food .all-menu-food .component-text p {
-  margin-top: 0.5rem;
-  margin-left: 4rem;
-  margin-right: 3.2rem;
-  font-size: 1rem;
-  color: white;
-}
-
-.menu-food .all-menu-food .component-text h6 {
-  font-size: 1rem;
-}
-
 .purpose {
   color: lavenderblush;
   background-color: #3e4136;
@@ -298,6 +282,11 @@ body {
 
 .purpose-content ul li {
   padding: 1.5px;
+}
+
+.discover-menu {
+  background: #212121;
+  min-height: 100vh;
 }
 
 .discover-menu .cover {
@@ -397,7 +386,6 @@ body {
 
 .calendar h2 {
   font-family: myFirstFont;
-  font-size: 4.8rem;
 }
 
 .calendar a {
@@ -415,10 +403,6 @@ body {
   border-radius: 5px;
   outline: none;
   margin-bottom: 2.5rem;
-}
-
-.calendar .right {
-  margin-left: 4.8rem;
 }
 
 .discover-news {
@@ -547,11 +531,106 @@ footer ul li {
   #setleft3 p {
     margin-right: 6rem;
   }
+  .menu-food {
+    padding-top: 5.5rem;
+    padding-bottom: 5.7rem;
+  }
+  .menu-food .all-menu {
+    margin: 0 auto;
+    width: 90.6%;
+  }
+  .menu-food .all-menu-info {
+    padding-top: 3rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: honeydew;
+    padding-bottom: 3.5rem;
+  }
+  .menu-food .all-menu-info span {
+    font-family: myFirstFont;
+    font-size: 2.8rem;
+  }
+  .menu-food .all-menu-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 0.5;
+  }
+  .menu-food .all-menu-food {
+    width: 100%;
+  }
+  .menu-food .all-menu-food-component {
+    min-width: 25%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .menu-food .all-menu-food .component-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-food .all-menu-food .component-text span {
+    margin-top: 3.3rem;
+    font-family: myFirstFont;
+    font-size: 1.8rem;
+  }
+  .menu-food .all-menu-food .component-text p {
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 3.2rem;
+    font-size: 1rem;
+  }
+  .menu-food .all-menu-food .component-text h6 {
+    font-size: 1rem;
+  }
+  .calendar {
+    padding-top: 2.5rem;
+    color: white;
+    background: #212121;
+    padding-bottom: 5rem;
+  }
+  .calendar h2 {
+    font-family: myFirstFont;
+    font-size: 4.8rem;
+  }
+  .calendar a {
+    margin: 0 auto;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 2px 5rem 2px 5rem;
+    border: 1px solid white;
+  }
+  .calendar-booking select {
+    width: 60%;
+    color: white;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2.5rem;
+  }
+  .calendar .right {
+    margin-left: 4.8rem;
+  }
 }
 
 @media (max-width: 992px) {
   body {
     overflow-x: hidden;
+  }
+  .container-fluid {
+    overflow: hidden;
   }
   .ab {
     text-align: center;
@@ -587,19 +666,6 @@ footer ul li {
     padding: 0.3rem;
     font-size: 22px;
   }
-  .logo {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .logo img {
     margin-right: 22%;
     margin-top: 3.2rem;
@@ -608,8 +674,6 @@ footer ul li {
   .logo .info-banner {
     margin-top: 3rem;
     margin-right: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: #AAC078;
   }
   .logo .info-banner span {
     font-size: 25px;
@@ -620,12 +684,337 @@ footer ul li {
     line-height: 0.7;
   }
   .logo .info-banner h2 {
-    background: #aac078;
-    background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(170, 192, 120, 0.353379)), color-stop(100%, rgba(241, 161, 161, 0.543855)), to(#00c7f0));
-    background: linear-gradient(90deg, rgba(170, 192, 120, 0.353379) 100%, rgba(241, 161, 161, 0.543855) 100%, #00c7f0 100%);
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    margin-top: 5.4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 3.4rem;
     font-size: 24px;
+  }
+  .menu-food {
+    background-color: #212121;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+  .menu-food .all-menu {
+    background: #45493b;
+    margin: 0 auto;
+    width: 90.6%;
+  }
+  .menu-food .all-menu-info {
+    padding-top: 3rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: honeydew;
+    padding-bottom: 3.5rem;
+  }
+  .menu-food .all-menu-info span {
+    font-family: myFirstFont;
+    color: #AAC078;
+    font-size: 2.8rem;
+  }
+  .menu-food .all-menu-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 0.5;
+  }
+  .menu-food .all-menu-food {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-food .all-menu-food-component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    color: white;
+  }
+  .menu-food .all-menu-food-component img {
+    max-width: 50%;
+  }
+  .menu-food .all-menu-food .component-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-food .all-menu-food .component-text span {
+    margin-top: 1.3rem;
+    font-family: myFirstFont;
+    color: #AAC078;
+    font-size: 16px;
+  }
+  .menu-food .all-menu-food .component-text p {
+    margin-top: 0.5rem;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 1rem;
+    color: white;
+  }
+  .menu-food .all-menu-food .component-text h6 {
+    font-size: 1rem;
+  }
+  .purpose {
+    color: lavenderblush;
+    background-color: #3e4136;
+  }
+  .purpose-content {
+    padding-top: 6.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5rem;
+  }
+  .purpose-content img {
+    width: 1.5rem;
+  }
+  .purpose-content span {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .purpose-content p {
+    font-size: 16px;
+    line-height: 0.8;
+  }
+  .purpose-content ul {
+    margin-top: 2.7rem;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .purpose-content ul li {
+    padding: 1.5px;
+  }
+  .benefit {
+    background-color: #45493b;
+    padding-bottom: 3.2rem;
+  }
+  .benefit .component {
+    margin-top: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefit .component span {
+    font-family: myFirstFont;
+    padding-bottom: 1.5rem;
+    font-size: 20px;
+  }
+  .benefit .component p {
+    font-size: 17px;
+  }
+  .content-info {
+    margin-top: 2.5rem;
+  }
+  .content-info span {
+    margin-left: 3.2rem;
+    font-size: 22px;
+  }
+  .content-info p {
+    margin-top: 2rem;
+    margin-left: 3.2rem;
+    font-size: 18px;
+  }
+  .discover-menu {
+    background-color: #3e4136;
+  }
+  .discover-menu .cover {
+    position: relative;
+  }
+  .discover-menu-list {
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+  .discover-menu-list-title {
+    margin-top: 2.6rem;
+    margin-bottom: 2.2rem;
+  }
+  .discover-menu-list-title h2 {
+    font-size: 40px;
+    line-height: 0.5;
+  }
+  .discover-menu-list-title span {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  .discover-menu-list-foods {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .discover-menu-list-foods-component {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2.3rem;
+  }
+  .discover-menu-list-foods-component ul {
+    margin-left: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover-menu-list-foods-component ul li {
+    list-style: none;
+  }
+  .discover-menu-list-foods-component ul li span {
+    font-family: myFirstFont;
+    font-size: 18px;
+  }
+  .discover-menu-list-foods-component ul li p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .calendar {
+    padding-top: 2.5rem;
+    color: white;
+    background: #212121;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .calendar h2 {
+    font-family: myFirstFont;
+    font-size: 3.2rem;
+  }
+  .calendar a {
+    color: white;
+    border-radius: 0.5rem;
+    padding: 2px 5rem 2px 5rem;
+    border: 1px solid white;
+  }
+  .calendar-booking {
+    text-align: center;
+  }
+  .calendar-booking select {
+    width: 60%;
+    color: white;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2.5rem;
+  }
+  .discover-news {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .discover-news h2 {
+    line-height: 0.6;
+    font-size: 2.5rem;
+  }
+  .discover-news h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .discover-news .card-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discover-news .card-news .card {
+    margin-bottom: 1.5rem;
+  }
+  .discover-news .card-news span {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .discover-news .card-news p {
+    font-size: 11px;
+  }
+  .discover-news .card-news a {
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    padding: 3px;
+    border-bottom: 5px solid #afc67b;
+  }
+  .evaluate {
+    padding-top: 3.2rem;
+    padding-bottom: 0.8rem;
+    font-size: 16px;
+  }
+  .evaluate img {
+    width: 50px;
+  }
+  .evaluate p {
+    line-height: 0.8;
+  }
+  .evaluate span {
+    font-family: myFirstFont;
+  }
+  .evaluate ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .evaluate ul li {
+    padding: 1.1rem;
   }
 }
 
