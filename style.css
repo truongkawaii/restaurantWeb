@@ -708,6 +708,9 @@ footer ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -721,8 +724,8 @@ footer ul li {
   }
   .menu-food .all-menu-info p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 0.5;
+    font-size: 3rem;
+    line-height: 1.3;
   }
   .menu-food .all-menu-food {
     width: 100%;
@@ -1062,6 +1065,77 @@ footer ul li {
     padding: 1rem 1.5rem 1rem 1.5rem;
     margin-top: 1.6rem;
     font-size: 24px;
+  }
+}
+
+@media (max-width: 570px) {
+  .evaluate {
+    padding-top: 2.5rem;
+    padding-bottom: 0.8rem;
+    font-size: 14px;
+  }
+  .evaluate img {
+    width: 30px;
+  }
+  .evaluate p {
+    line-height: 0.8;
+  }
+  .evaluate span {
+    font-family: myFirstFont;
+  }
+  .evaluate ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .evaluate ul li {
+    padding: 0.9rem;
+  }
+  .menu-food .all-menu {
+    background: #45493b;
+    margin: 0 auto;
+    width: 90.6%;
+  }
+  .menu-food .all-menu-info {
+    padding-top: 3rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: honeydew;
+  }
+  .menu-food .all-menu-info span {
+    font-family: myFirstFont;
+    color: #AAC078;
+    font-size: 2.8rem;
+  }
+  .menu-food .all-menu-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .menu-food .all-menu-food-component img {
+    max-width: 50%;
+  }
+  .menu-food .all-menu-food .component-text span {
+    font-size: 16px;
+  }
+  .menu-food .all-menu-food .component-text p {
+    margin-right: 15px;
+    font-size: 1rem;
+    color: white;
+  }
+  .menu-food .all-menu-food .component-text h6 {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
